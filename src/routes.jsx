@@ -1,7 +1,6 @@
-import { AuthTabs } from "./pages/auth";
+import { AuthTabs, ForgotPassword, ResetPassword } from "./pages";
 
 import { useRoutes } from "react-router-dom";
-import ForgotPassword from "./pages/forgot-password/forgotPassword";
 
 export const AppRouter = () => {
   const elements = useRoutes([
@@ -12,6 +11,10 @@ export const AppRouter = () => {
     {
       path: "/forgot-password",
       element: <ForgotPassword />,
+    },
+    {
+      path: "/reset-password",
+      element: <ResetPassword />,
     },
   ]);
   return elements;

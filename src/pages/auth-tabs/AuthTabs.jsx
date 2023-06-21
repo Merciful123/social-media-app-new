@@ -1,15 +1,15 @@
 import "./AuthTab.scss";
-// import backgroundImage from "../../../assets/images/background.jpg";
+import backgroundImage from "../../assets/images/background.jpg";
 import { useState } from "react";
-import Login from "../../login/Login";
-import Register from "../../register/Register";
+import Login from "../login/Login";
+import Register from "../register/Register";
 
 const AuthTabs = () => {
   const [type, setType] = useState("Sign In");
   return (
     <div
       className="container-wrapper"
-      // style={{ backgroundImage: `url(${backgroundImage})` }}
+      style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="environment">DEV</div>
       <div className="container-wrapper-auth">
