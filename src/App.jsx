@@ -1,14 +1,15 @@
-import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import "./App.scss";
+import { AppRouter } from "./routes";
 
-function App() {
-
+const App = () => {
   return (
     <>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <BrowserRouter>
+        <AppRouter />
+      </BrowserRouter>
     </>
   );
-}
+};
 
 export default App;
